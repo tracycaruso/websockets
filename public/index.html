@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ask the Audience</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="box">
+      <div id="connection-count"></div>
+      <div id="status-message"></div>
+
+      <h1>Vote on Your Favorite Ice Cream</h1>
+      <div id="choices">
+        <button>Chocolate</button>
+        <button>Vanilla</button>
+        <button>Rocky Road</button>
+        <button>Mint Chocolate Chip</button>
+      </div>
+      <br/>
+      <div id="vote-total"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
