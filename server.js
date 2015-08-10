@@ -47,14 +47,16 @@ io.on('connection', function(socket) {
 });
 
 
-var voteCount = {
-  "Chocolate": 0,
-  "Vanilla": 0,
-  "Rocky Road": 0,
-  "Mint Chocolate Chip": 0
-};
 
 function countVotes(votes) {
+  var voteCount = {
+    "Chocolate": 0,
+    "Vanilla": 0,
+    "Rocky Road": 0,
+    "Mint Chocolate Chip": 0
+  };
+
+
   for (vote in votes) {
     voteCount[votes[vote]] ++
   }
